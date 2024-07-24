@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+    font-weight: 700;
+}
+
+body {
+  background-color: beige;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit';
+}
+
+
+h1{
+    font-family: 'Young Serif';
+}
+
+h2{
+    font-family: 'Young Serif';
+    color: hsl(14, 45%, 36%);
+    margin-bottom: 0px;
+}
+
+h3{
+    font-family: 'Young Serif';
+    color: hsl(332, 51%, 32%);
+    
+}
+
+.card {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    margin: 200px;
+    padding: 50px;
+    width: 700px;
+    
+}
+
+.preparation{
+    background-color:hsl(330, 100%, 98%) ;
+    padding: 5px 20px;
+    margin-top: 18px;
+    border-radius: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: 600;
+}
+
+img {
+    height: 300px;
+    width: 700px;
+}
+
+.position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ol, ul {
+    padding: 19px;
+}
+
+.nutrition {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nutrition-item {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e2e2e2;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.nutrition-item p {
+    margin: 0;
+}
+
+.nutrition-item p:first-child {
+    flex: 1;
+    text-align: left;
+}
+
+.nutrition-item p:last-child {
+    flex: 1;
+    text-align: center;
+    margin-right: 200px;
+    font-weight: 700;
+    color: hsl(14, 45%, 36%);
+}
+
+.Ingredient {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+@media screen and (max-width:1040px) {
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image-container img {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nutrition-item p:last-child {
+        margin-right: 50px;
+    }
+}
